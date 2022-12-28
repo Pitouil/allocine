@@ -4,23 +4,23 @@ namespace App\Entity;
 
 abstract class StaffMember
 {
-    protected sting $firstName;
+    protected string $firstName;
 
     protected string $lastName;
 
     /**
-     * @return sting
+     * @return string
      */
-    public function getFirstName(): sting
+    public function getFirstName(): string
     {
         return $this->firstName;
     }
 
     /**
-     * @param sting $firstName
+     * @param string $firstName
      * @return StaffMember
      */
-    public function setFirstName(sting $firstName): StaffMember
+    public function setFirstName(string $firstName): StaffMember
     {
         $this->firstName = $firstName;
         return $this;
